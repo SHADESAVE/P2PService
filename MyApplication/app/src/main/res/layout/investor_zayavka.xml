@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <Button
+            android:text="Инвестировать"
+            android:layout_width="240dp"
+            android:layout_height="68dp"
+            android:id="@+id/button_create"
+            app:layout_constraintStart_toStartOf="@+id/editText2"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintEnd_toEndOf="@+id/editText2"
+            app:layout_constraintHorizontal_bias="0.562" android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp" android:textColor="@android:color/white" android:background="@color/colorPrimary"/>
+    <Button
+            android:text="Назад"
+            android:layout_width="240dp"
+            android:layout_height="68dp"
+            android:id="@+id/button_back"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/button_create"
+            app:layout_constraintEnd_toEndOf="@+id/button_create" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/button_create" android:layout_marginTop="16dp"
+            app:layout_constraintVertical_bias="0.0" android:fontFamily="sans-serif-condensed" android:textSize="20sp"
+            android:textColor="@android:color/white" android:background="@color/colorPrimary"/>
+    <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/test"
+            android:id="@+id/editText2"
+            android:hint="Введите сумму" android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"
+            android:textSize="24sp" android:textColor="@color/colorAccent" android:textAlignment="center"
+            android:inputType="number"/>
+</android.support.constraint.ConstraintLayout>

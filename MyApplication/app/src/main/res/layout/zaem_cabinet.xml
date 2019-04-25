@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:ignore="ExtraText">
+    <ImageView
+            android:layout_width="145dp"
+            android:layout_height="145dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round" app:layout_constraintStart_toStartOf="@+id/textViewSumm2"/>
+    <TextView
+            android:text="Заёмщик:"
+            android:layout_width="134dp"
+            android:layout_height="45dp"
+            android:id="@+id/textView" android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed" android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"/>
+    <TextView
+            android:text="bor1"
+            android:layout_width="134dp"
+            android:layout_height="100dp"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:textColor="@color/colorAccent" android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/button_fillBalance"/>
+    android:onClick="onClick"
+    <Button
+            android:text="Пополнить баланс"
+            android:layout_width="290dp"
+            android:layout_height="68dp"
+            android:id="@+id/button_fillBalance"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.495"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textViewSumm2"
+            android:background="@color/colorPrimary" android:textColor="@android:color/white"/>
+    <Button
+            android:text="Создать заявку"
+            android:layout_width="290dp"
+            android:layout_height="68dp"
+            android:id="@+id/button_createOffer"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/button_fillBalance"
+            app:layout_constraintEnd_toEndOf="@+id/button_fillBalance" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/button_fillBalance" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+    <Button
+            android:text="Выйти"
+            android:layout_width="290dp"
+            android:layout_height="68dp"
+            android:id="@+id/button_logOut"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_createOffer"
+            app:layout_constraintStart_toStartOf="@+id/button_createOffer" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/button_createOffer" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.018" android:layout_marginStart="8dp"
+            android:background="@color/colorPrimary" android:textColor="@android:color/white"/>
+    <TextView
+            android:text="100"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:id="@+id/textViewSumm"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="16dp" android:textColor="@color/colorAccent" android:textAlignment="center"/>
+    <TextView
+            android:text="Ваш баланс:"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:id="@+id/textViewSumm2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewSumm"
+            app:layout_constraintTop_toTopOf="@+id/textViewSumm"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/textViewSumm"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorAccent" android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/button_fillBalance"
+            app:layout_constraintHorizontal_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>
